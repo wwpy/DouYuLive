@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D41E75612568F82200D9C070 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41E75602568F82200D9C070 /* AppDelegate.swift */; };
+		D41E75A12569041300D9C070 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41E759D2569041300D9C070 /* LaunchScreen.storyboard */; };
+		D41E75A22569041300D9C070 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41E759F2569041300D9C070 /* Main.storyboard */; };
+		D41E75A62569042000D9C070 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D41E75A52569042000D9C070 /* Assets.xcassets */; };
+		D41E75AA2569055800D9C070 /* ZJTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41E75A92569055800D9C070 /* ZJTabBarController.swift */; };
+		D41E75AD25690C9E00D9C070 /* ZJNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41E75AC25690C9E00D9C070 /* ZJNavigationController.swift */; };
+		D41E75B125690EA300D9C070 /* ZJBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41E75B025690EA300D9C070 /* ZJBaseViewController.swift */; };
+		D41E75B425690F0500D9C070 /* ZJRecreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41E75B325690F0500D9C070 /* ZJRecreationViewController.swift */; };
+		D41E75B725690F7200D9C070 /* ZJFollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41E75B625690F7200D9C070 /* ZJFollowViewController.swift */; };
+		D41E75BA25690FB100D9C070 /* ZJFishBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41E75B925690FB100D9C070 /* ZJFishBarViewController.swift */; };
+		D41E75BD25690FE200D9C070 /* ZJDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41E75BC25690FE200D9C070 /* ZJDiscoverViewController.swift */; };
+		D41E75C02569102700D9C070 /* ZJProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41E75BF2569102700D9C070 /* ZJProfileViewController.swift */; };
+		D41E75C4256913BA00D9C070 /* ZJHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41E75C3256913BA00D9C070 /* ZJHomeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D41E755D2568F82200D9C070 /* DouYuLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D41E75602568F82200D9C070 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D41E756E2568F82500D9C070 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D41E759E2569041300D9C070 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D41E75A02569041300D9C070 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D41E75A52569042000D9C070 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D41E75A92569055800D9C070 /* ZJTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJTabBarController.swift; sourceTree = "<group>"; };
+		D41E75AC25690C9E00D9C070 /* ZJNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJNavigationController.swift; sourceTree = "<group>"; };
+		D41E75B025690EA300D9C070 /* ZJBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJBaseViewController.swift; sourceTree = "<group>"; };
+		D41E75B325690F0500D9C070 /* ZJRecreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJRecreationViewController.swift; sourceTree = "<group>"; };
+		D41E75B625690F7200D9C070 /* ZJFollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJFollowViewController.swift; sourceTree = "<group>"; };
+		D41E75B925690FB100D9C070 /* ZJFishBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJFishBarViewController.swift; sourceTree = "<group>"; };
+		D41E75BC25690FE200D9C070 /* ZJDiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJDiscoverViewController.swift; sourceTree = "<group>"; };
+		D41E75BF2569102700D9C070 /* ZJProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJProfileViewController.swift; sourceTree = "<group>"; };
+		D41E75C3256913BA00D9C070 /* ZJHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJHomeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D41E755A2568F82200D9C070 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D41E75542568F82200D9C070 = {
+			isa = PBXGroup;
+			children = (
+				D41E755F2568F82200D9C070 /* DouYuLive */,
+				D41E755E2568F82200D9C070 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D41E755E2568F82200D9C070 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D41E755D2568F82200D9C070 /* DouYuLive.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D41E755F2568F82200D9C070 /* DouYuLive */ = {
+			isa = PBXGroup;
+			children = (
+				D41E75602568F82200D9C070 /* AppDelegate.swift */,
+				D41E757A256903BF00D9C070 /* Classes */,
+				D41E7593256903EE00D9C070 /* Network */,
+				D41E7595256903FB00D9C070 /* ZJCustomView */,
+				D41E75992569040600D9C070 /* Tools */,
+				D41E759C2569041300D9C070 /* Other */,
+				D41E75A42569042000D9C070 /* Rescoure */,
+				D41E756E2568F82500D9C070 /* Info.plist */,
+			);
+			path = DouYuLive;
+			sourceTree = "<group>";
+		};
+		D41E757A256903BF00D9C070 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D41E7590256903BF00D9C070 /* Main */,
+				D41E757B256903BF00D9C070 /* Home(首页) */,
+				D41E7589256903BF00D9C070 /* Recreation(娱乐) */,
+				D41E7582256903BF00D9C070 /* Follow(关注) */,
+				D41E7586256903BF00D9C070 /* FishBar(鱼吧) */,
+				D41E757F256903BF00D9C070 /* Discover(发现) */,
+				D41E758D256903BF00D9C070 /* Profile(个人中心) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D41E757B256903BF00D9C070 /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				D41E75C3256913BA00D9C070 /* ZJHomeViewController.swift */,
+				D41E757C256903BF00D9C070 /* ViewModel */,
+				D41E757D256903BF00D9C070 /* Controller */,
+				D41E757E256903BF00D9C070 /* View */,
+			);
+			path = "Home(首页)";
+			sourceTree = "<group>";
+		};
+		D41E757C256903BF00D9C070 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D41E757D256903BF00D9C070 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D41E757E256903BF00D9C070 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D41E757F256903BF00D9C070 /* Discover(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				D41E75BC25690FE200D9C070 /* ZJDiscoverViewController.swift */,
+				D41E7580256903BF00D9C070 /* Model */,
+				D41E7581256903BF00D9C070 /* View */,
+			);
+			path = "Discover(发现)";
+			sourceTree = "<group>";
+		};
+		D41E7580256903BF00D9C070 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D41E7581256903BF00D9C070 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D41E7582256903BF00D9C070 /* Follow(关注) */ = {
+			isa = PBXGroup;
+			children = (
+				D41E75B625690F7200D9C070 /* ZJFollowViewController.swift */,
+				D41E7583256903BF00D9C070 /* Controller */,
+				D41E7584256903BF00D9C070 /* Model */,
+				D41E7585256903BF00D9C070 /* View */,
+			);
+			path = "Follow(关注)";
+			sourceTree = "<group>";
+		};
+		D41E7583256903BF00D9C070 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D41E7584256903BF00D9C070 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D41E7585256903BF00D9C070 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D41E7586256903BF00D9C070 /* FishBar(鱼吧) */ = {
+			isa = PBXGroup;
+			children = (
+				D41E75B925690FB100D9C070 /* ZJFishBarViewController.swift */,
+				D41E7587256903BF00D9C070 /* Controller */,
+				D41E7588256903BF00D9C070 /* View */,
+			);
+			path = "FishBar(鱼吧)";
+			sourceTree = "<group>";
+		};
+		D41E7587256903BF00D9C070 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D41E7588256903BF00D9C070 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D41E7589256903BF00D9C070 /* Recreation(娱乐) */ = {
+			isa = PBXGroup;
+			children = (
+				D41E75B325690F0500D9C070 /* ZJRecreationViewController.swift */,
+				D41E758A256903BF00D9C070 /* Controller */,
+				D41E758B256903BF00D9C070 /* Model */,
+				D41E758C256903BF00D9C070 /* View */,
+			);
+			path = "Recreation(娱乐)";
+			sourceTree = "<group>";
+		};
+		D41E758A256903BF00D9C070 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D41E758B256903BF00D9C070 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D41E758C256903BF00D9C070 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D41E758D256903BF00D9C070 /* Profile(个人中心) */ = {
+			isa = PBXGroup;
+			children = (
+				D41E75BF2569102700D9C070 /* ZJProfileViewController.swift */,
+				D41E758E256903BF00D9C070 /* Controller */,
+				D41E758F256903BF00D9C070 /* View */,
+			);
+			path = "Profile(个人中心)";
+			sourceTree = "<group>";
+		};
+		D41E758E256903BF00D9C070 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D41E758F256903BF00D9C070 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D41E7590256903BF00D9C070 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D41E7591256903BF00D9C070 /* Controller */,
+				D41E7592256903BF00D9C070 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D41E7591256903BF00D9C070 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D41E75A92569055800D9C070 /* ZJTabBarController.swift */,
+				D41E75AC25690C9E00D9C070 /* ZJNavigationController.swift */,
+				D41E75B025690EA300D9C070 /* ZJBaseViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D41E7592256903BF00D9C070 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D41E7593256903EE00D9C070 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D41E7594256903EE00D9C070 /* Home */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D41E7594256903EE00D9C070 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D41E7595256903FB00D9C070 /* ZJCustomView */ = {
+			isa = PBXGroup;
+			children = (
+				D41E7596256903FB00D9C070 /* ZJCarouselView */,
+				D41E7597256903FB00D9C070 /* ZJPageView */,
+				D41E7598256903FB00D9C070 /* ZJPopupView */,
+			);
+			path = ZJCustomView;
+			sourceTree = "<group>";
+		};
+		D41E7596256903FB00D9C070 /* ZJCarouselView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ZJCarouselView;
+			sourceTree = "<group>";
+		};
+		D41E7597256903FB00D9C070 /* ZJPageView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ZJPageView;
+			sourceTree = "<group>";
+		};
+		D41E7598256903FB00D9C070 /* ZJPopupView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ZJPopupView;
+			sourceTree = "<group>";
+		};
+		D41E75992569040600D9C070 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D41E759A2569040600D9C070 /* Extension */,
+				D41E759B2569040600D9C070 /* Marco */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		D41E759A2569040600D9C070 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D41E759B2569040600D9C070 /* Marco */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Marco;
+			sourceTree = "<group>";
+		};
+		D41E759C2569041300D9C070 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				D41E759D2569041300D9C070 /* LaunchScreen.storyboard */,
+				D41E759F2569041300D9C070 /* Main.storyboard */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		D41E75A42569042000D9C070 /* Rescoure */ = {
+			isa = PBXGroup;
+			children = (
+				D41E75A52569042000D9C070 /* Assets.xcassets */,
+			);
+			path = Rescoure;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D41E755C2568F82200D9C070 /* DouYuLive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D41E75712568F82500D9C070 /* Build configuration list for PBXNativeTarget "DouYuLive" */;
+			buildPhases = (
+				D41E75592568F82200D9C070 /* Sources */,
+				D41E755A2568F82200D9C070 /* Frameworks */,
+				D41E755B2568F82200D9C070 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DouYuLive;
+			productName = DouYuLive;
+			productReference = D41E755D2568F82200D9C070 /* DouYuLive.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41E75552568F82200D9C070 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					D41E755C2568F82200D9C070 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = D41E75582568F82200D9C070 /* Build configuration list for PBXProject "DouYuLive" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D41E75542568F82200D9C070;
+			productRefGroup = D41E755E2568F82200D9C070 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D41E755C2568F82200D9C070 /* DouYuLive */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D41E755B2568F82200D9C070 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D41E75A12569041300D9C070 /* LaunchScreen.storyboard in Resources */,
+				D41E75A62569042000D9C070 /* Assets.xcassets in Resources */,
+				D41E75A22569041300D9C070 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D41E75592568F82200D9C070 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D41E75AD25690C9E00D9C070 /* ZJNavigationController.swift in Sources */,
+				D41E75C02569102700D9C070 /* ZJProfileViewController.swift in Sources */,
+				D41E75B725690F7200D9C070 /* ZJFollowViewController.swift in Sources */,
+				D41E75612568F82200D9C070 /* AppDelegate.swift in Sources */,
+				D41E75BD25690FE200D9C070 /* ZJDiscoverViewController.swift in Sources */,
+				D41E75AA2569055800D9C070 /* ZJTabBarController.swift in Sources */,
+				D41E75B125690EA300D9C070 /* ZJBaseViewController.swift in Sources */,
+				D41E75B425690F0500D9C070 /* ZJRecreationViewController.swift in Sources */,
+				D41E75BA25690FB100D9C070 /* ZJFishBarViewController.swift in Sources */,
+				D41E75C4256913BA00D9C070 /* ZJHomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D41E759D2569041300D9C070 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D41E759E2569041300D9C070 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D41E759F2569041300D9C070 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D41E75A02569041300D9C070 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D41E756F2568F82500D9C070 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D41E75702568F82500D9C070 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D41E75722568F82500D9C070 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9B2Y6DGC8M;
+				INFOPLIST_FILE = DouYuLive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = github.com.wwpy.DouYuLive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D41E75732568F82500D9C070 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9B2Y6DGC8M;
+				INFOPLIST_FILE = DouYuLive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = github.com.wwpy.DouYuLive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D41E75582568F82200D9C070 /* Build configuration list for PBXProject "DouYuLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D41E756F2568F82500D9C070 /* Debug */,
+				D41E75702568F82500D9C070 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D41E75712568F82500D9C070 /* Build configuration list for PBXNativeTarget "DouYuLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D41E75722568F82500D9C070 /* Debug */,
+				D41E75732568F82500D9C070 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41E75552568F82200D9C070 /* Project object */;
+}
