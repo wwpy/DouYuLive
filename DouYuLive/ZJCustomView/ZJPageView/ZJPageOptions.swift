@@ -15,7 +15,7 @@ public class ZJPageOptions {
     // 选中的颜色 (red,green,blue)
     public var kSelectColor : (CGFloat,CGFloat,CGFloat) = (200,33,33)
     // label间距
-//    public var kMarginW : CGFloat = Adapt(20)
+    public var kMarginW : CGFloat = Adapt(20)
     // 是否允许标题滚动
     public var isTitleScrollEnable : Bool = true
     // 底部滚动线的高度

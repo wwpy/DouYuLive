@@ -32,6 +32,7 @@
 		D41E75F62569F55300D9C070 /* ZJHomeSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41E75F52569F55300D9C070 /* ZJHomeSearchView.swift */; };
 		D41E75FA256A15C900D9C070 /* ZJView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41E75F9256A15C800D9C070 /* ZJView+Extension.swift */; };
 		D41E75FD256A537900D9C070 /* ZJCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41E75FC256A537900D9C070 /* ZJCustomView.swift */; };
+		D41E7600256A7C6F00D9C070 /* ZJPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41E75FF256A7C6F00D9C070 /* ZJPageTitleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		D41E75F52569F55300D9C070 /* ZJHomeSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJHomeSearchView.swift; sourceTree = "<group>"; };
 		D41E75F9256A15C800D9C070 /* ZJView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ZJView+Extension.swift"; sourceTree = "<group>"; };
 		D41E75FC256A537900D9C070 /* ZJCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJCustomView.swift; sourceTree = "<group>"; };
+		D41E75FF256A7C6F00D9C070 /* ZJPageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJPageTitleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -373,6 +375,7 @@
 			isa = PBXGroup;
 			children = (
 				D41E75F12569E26500D9C070 /* ZJPageOptions.swift */,
+				D41E75FF256A7C6F00D9C070 /* ZJPageTitleView.swift */,
 			);
 			path = ZJPageView;
 			sourceTree = "<group>";
@@ -555,6 +558,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D41E7600256A7C6F00D9C070 /* ZJPageTitleView.swift in Sources */,
 				D41E75AD25690C9E00D9C070 /* ZJNavigationController.swift in Sources */,
 				D41E75C02569102700D9C070 /* ZJProfileViewController.swift in Sources */,
 				D41E75E92569DFF800D9C070 /* ZJPopupView.swift in Sources */,
