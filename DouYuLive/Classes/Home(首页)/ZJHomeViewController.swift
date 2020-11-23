@@ -14,6 +14,16 @@ class ZJHomeViewController: ZJBaseViewController {
     // 标题数组
     private lazy var titles : [String] = ["分类","推荐","全部","LOL","绝地求生","王者荣耀","QQ飞车"]
     // 控制器数组
+    private lazy var controllers: [UIViewController] = {
+        var controllers = [] as [UIViewController]
+        for vc in 0..<7 {
+            let vv = UIViewController()
+            vv.view.backgroundColor = kGreen
+            controllers.append(vv)
+        }
+        
+        return controllers
+    }()
     
     // 标题 View
     private lazy var pageTitleView: ZJPageTitleView = { [weak self] in
@@ -30,7 +40,16 @@ class ZJHomeViewController: ZJBaseViewController {
         
         return pageTitleView
     }()
-    
+    // 内容 View
+    private lazy var pageContentView: ZJPageContentView = { [weak self] in
+        let height: CGFloat = kScreenH - kStatusHeight - kNavigationBarHeight - kCateTitleH - kTabBarHeight
+        let frame = CGRect(x: 0, y: kCateTitleH, width: kScreenW, height: height)
+        
+        let contentView = ZJPageContentView(frame: frame, childVCs: controllers, parentViewController: self!)
+//        contentView.delegate = self
+        
+        return contentView
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,5 +76,7 @@ extension ZJHomeViewController {
     func setUpPageTitleAndContentView() {
         // 添加 TitleView
         view.addSubview(pageTitleView)
+        // 添加 ContentView
+        view.addSubview(pageContentView)
     }
 }

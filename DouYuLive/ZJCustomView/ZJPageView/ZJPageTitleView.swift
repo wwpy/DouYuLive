@@ -7,9 +7,16 @@
 
 import UIKit
 
+protocol PageTitleViewDelegate : class {
+    func pageTitleView(titleView: ZJPageTitleView, selectedIndex index: Int)
+}
+
 class ZJPageTitleView: UIView {
+    // 代理协议
+    weak var delegate: PageTitleViewDelegate?
 
     // 懒加载属性
+    // 滚动 View
     private lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.showsHorizontalScrollIndicator = false
@@ -71,6 +78,7 @@ class ZJPageTitleView: UIView {
         super.layoutSubviews()
         
         setUpLabelsLayout()
+        setUpBottomLineLayout()
     }
     
 }
@@ -83,10 +91,12 @@ extension ZJPageTitleView {
         scrollView.frame = bounds
         // 添加对应的title
         setUpTitleLabel()
+        
+        // 设置底线滚动的滑块
+        
     }
     
     private func setUpTitleLabel() {
-        print(self.titles)
         for (index, title) in titles.enumerated() {
             // 创建 label
             let label = UILabel()
@@ -106,6 +116,30 @@ extension ZJPageTitleView {
             label.addGestureRecognizer(tap)
         }
     }
+    
+    private func setBottomMenuAndScrollLine() {
+        // 添加底部分割线 和 滚动线
+        if option.kIsShowBottomBorderLine {
+            addSubview(bottomLine)
+        }
+        
+        // 如果没有就返回
+        setUpBottomLine()
+        
+        guard let firstLab = titleLabs.first else { return }
+        firstLab.textColor = colorWithRGBA(option.kSelectColor.0, option.kSelectColor.1, option.kSelectColor.2, 1.0)
+        if option.kTitleSelectFontSize != nil {
+            firstLab.font = BoldFontSize(option.kTitleSelectFontSize!)
+        }
+        
+        adjustLabelPosition(firstLab)
+    }
+    
+    func setUpBottomLine() {
+        guard option.isShowBottomLine else { return }
+        // 添加scrollLine
+        scrollView.addSubview(scrollLine)
+    }
 }
 
 // MARK:- layout
@@ -119,7 +153,7 @@ extension ZJPageTitleView {
         let count = titleLabs.count
         for (index, titleLabel) in titleLabs.enumerated() {
             if option.isTitleScrollEnable {
-                labelW = (titles[index] as NSString).boundingRect(with: CGSize(width: CGFloat.greatestFiniteMagnitude, height: 0), options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: titleLabel.font], context: nil).width
+                labelW = (titles[index] as NSString).boundingRect(with: CGSize(width: CGFloat.greatestFiniteMagnitude, height: 0), options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: titleLabel.font!], context: nil).width
                 labelX = index == 0 ? option.kMarginW * 0.5 : (titleLabs[index - 1].frame.maxX + option.kMarginW)
             } else if option.kItemWidth != 0 {
                 labelW = option.kItemWidth

@@ -33,6 +33,7 @@
 		D41E75FA256A15C900D9C070 /* ZJView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41E75F9256A15C800D9C070 /* ZJView+Extension.swift */; };
 		D41E75FD256A537900D9C070 /* ZJCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41E75FC256A537900D9C070 /* ZJCustomView.swift */; };
 		D41E7600256A7C6F00D9C070 /* ZJPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41E75FF256A7C6F00D9C070 /* ZJPageTitleView.swift */; };
+		D41E7606256AB96600D9C070 /* ZJPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41E7605256AB96600D9C070 /* ZJPageContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		D41E75F9256A15C800D9C070 /* ZJView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ZJView+Extension.swift"; sourceTree = "<group>"; };
 		D41E75FC256A537900D9C070 /* ZJCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJCustomView.swift; sourceTree = "<group>"; };
 		D41E75FF256A7C6F00D9C070 /* ZJPageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJPageTitleView.swift; sourceTree = "<group>"; };
+		D41E7605256AB96600D9C070 /* ZJPageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJPageContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -376,6 +378,7 @@
 			children = (
 				D41E75F12569E26500D9C070 /* ZJPageOptions.swift */,
 				D41E75FF256A7C6F00D9C070 /* ZJPageTitleView.swift */,
+				D41E7605256AB96600D9C070 /* ZJPageContentView.swift */,
 			);
 			path = ZJPageView;
 			sourceTree = "<group>";
@@ -562,6 +565,7 @@
 				D41E75AD25690C9E00D9C070 /* ZJNavigationController.swift in Sources */,
 				D41E75C02569102700D9C070 /* ZJProfileViewController.swift in Sources */,
 				D41E75E92569DFF800D9C070 /* ZJPopupView.swift in Sources */,
+				D41E7606256AB96600D9C070 /* ZJPageContentView.swift in Sources */,
 				D41E75B725690F7200D9C070 /* ZJFollowViewController.swift in Sources */,
 				D41E75612568F82200D9C070 /* AppDelegate.swift in Sources */,
 				D41E75BD25690FE200D9C070 /* ZJDiscoverViewController.swift in Sources */,
