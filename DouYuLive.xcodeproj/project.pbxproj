@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		AD900DDBAE9C41A179BFAFD3 /* Pods_DouYuLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2316CEDB9C5FA17DC29808D8 /* Pods_DouYuLive.framework */; };
+		D414F24D256B8682004E6B3D /* ZJNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D414F24C256B8682004E6B3D /* ZJNetworking.swift */; };
+		D414F250256B89ED004E6B3D /* ZJDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D414F24F256B89ED004E6B3D /* ZJDate+Extension.swift */; };
+		D414F253256B9146004E6B3D /* ZJInterfaceURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D414F252256B9146004E6B3D /* ZJInterfaceURL.swift */; };
+		D414F256256B93CD004E6B3D /* ZJNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D414F255256B93CD004E6B3D /* ZJNetworkProvider.swift */; };
+		D414F259256BA4CA004E6B3D /* ZJHomeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D414F258256BA4C9004E6B3D /* ZJHomeAPI.swift */; };
 		D41E75612568F82200D9C070 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41E75602568F82200D9C070 /* AppDelegate.swift */; };
 		D41E75A12569041300D9C070 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41E759D2569041300D9C070 /* LaunchScreen.storyboard */; };
 		D41E75A22569041300D9C070 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41E759F2569041300D9C070 /* Main.storyboard */; };
@@ -40,6 +45,11 @@
 		2316CEDB9C5FA17DC29808D8 /* Pods_DouYuLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouYuLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		279471D87D4EAA36B0088050 /* Pods-DouYuLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuLive.debug.xcconfig"; path = "Target Support Files/Pods-DouYuLive/Pods-DouYuLive.debug.xcconfig"; sourceTree = "<group>"; };
 		81367939CE5C0C75B87E6CC9 /* Pods-DouYuLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuLive.release.xcconfig"; path = "Target Support Files/Pods-DouYuLive/Pods-DouYuLive.release.xcconfig"; sourceTree = "<group>"; };
+		D414F24C256B8682004E6B3D /* ZJNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJNetworking.swift; sourceTree = "<group>"; };
+		D414F24F256B89ED004E6B3D /* ZJDate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ZJDate+Extension.swift"; sourceTree = "<group>"; };
+		D414F252256B9146004E6B3D /* ZJInterfaceURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJInterfaceURL.swift; sourceTree = "<group>"; };
+		D414F255256B93CD004E6B3D /* ZJNetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJNetworkProvider.swift; sourceTree = "<group>"; };
+		D414F258256BA4C9004E6B3D /* ZJHomeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJHomeAPI.swift; sourceTree = "<group>"; };
 		D41E755D2568F82200D9C070 /* DouYuLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41E75602568F82200D9C070 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D41E756E2568F82500D9C070 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -345,6 +355,9 @@
 			isa = PBXGroup;
 			children = (
 				D41E7594256903EE00D9C070 /* Home */,
+				D414F24C256B8682004E6B3D /* ZJNetworking.swift */,
+				D414F252256B9146004E6B3D /* ZJInterfaceURL.swift */,
+				D414F255256B93CD004E6B3D /* ZJNetworkProvider.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -352,6 +365,7 @@
 		D41E7594256903EE00D9C070 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				D414F258256BA4C9004E6B3D /* ZJHomeAPI.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -401,6 +415,7 @@
 				D41E759A2569040600D9C070 /* Extension */,
 				D41E759B2569040600D9C070 /* Marco */,
 				D41E75C925691B0500D9C070 /* ZJCommon.swift */,
+				D414F24F256B89ED004E6B3D /* ZJDate+Extension.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -572,17 +587,22 @@
 				D41E75AA2569055800D9C070 /* ZJTabBarController.swift in Sources */,
 				D41E75CA25691B0500D9C070 /* ZJCommon.swift in Sources */,
 				D41E75CD2569284800D9C070 /* ZJColor.swift in Sources */,
+				D414F256256B93CD004E6B3D /* ZJNetworkProvider.swift in Sources */,
 				D41E75F22569E26500D9C070 /* ZJPageOptions.swift in Sources */,
 				D41E75FD256A537900D9C070 /* ZJCustomView.swift in Sources */,
 				D41E75B125690EA300D9C070 /* ZJBaseViewController.swift in Sources */,
 				D41E75B425690F0500D9C070 /* ZJRecreationViewController.swift in Sources */,
 				D41E75BA25690FB100D9C070 /* ZJFishBarViewController.swift in Sources */,
 				D41E75EF2569E16400D9C070 /* ZJPopupViewDelegate.swift in Sources */,
+				D414F253256B9146004E6B3D /* ZJInterfaceURL.swift in Sources */,
+				D414F24D256B8682004E6B3D /* ZJNetworking.swift in Sources */,
 				D41E75D025692E0B00D9C070 /* ZJFont.swift in Sources */,
 				D41E75E52569DD3800D9C070 /* ZJAlertController.swift in Sources */,
 				D41E75FA256A15C900D9C070 /* ZJView+Extension.swift in Sources */,
 				D41E75EC2569E05400D9C070 /* ZJPopupBaseView.swift in Sources */,
 				D41E75C4256913BA00D9C070 /* ZJHomeViewController.swift in Sources */,
+				D414F259256BA4CA004E6B3D /* ZJHomeAPI.swift in Sources */,
+				D414F250256B89ED004E6B3D /* ZJDate+Extension.swift in Sources */,
 				D41E75F62569F55300D9C070 /* ZJHomeSearchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
